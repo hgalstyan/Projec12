@@ -1,0 +1,5 @@
+mixin search 
+	form(action='/pubs', method='get')
+		label(for='search') Near:
+		input#search.search(type='text', placeholder='Los Angeles CA', name='search')
+		button.btn-search(type='submit') Search

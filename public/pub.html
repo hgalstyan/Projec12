@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cafe Searcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header >
+        <div class="navigation-container">
+            <h1 class="heading">Pubs & Booses</h1>
+        </div>
+    </header>
+    <main class="container">
+        <label for="search">Near:</label>
+        <input type="text" class="search" id="search" placeholder="Los Angeles CA">
+        <form>
+            <input type="checkbox" name="pub_check" id="pub_id">
+            <!--<span class="checkmark"></span>-->
+            <label for="pub_id" class="col container_pub flex between" onclick="check(this)">
+                <input type="hidden" name="pub_location" value="lat: 1241241234234; lon: 123124124"/>
+                <img src="#" class="pub_img"/>
+                <div class="pub_info start">
+                    <div class="info_open flex between">
+                        <h4 class="pub_name">Name</h4>
+                        <p class="isOpen">Open</p>
+                    </div>
+                    <p class="price">Price range <span>$31-60</span></p>
+                    <p class="phone">(415) 715-8296</p>
+                    <p class="adress">2 Burrows St</p>
+                </div>
+                <div class="flex flex-col">
+                    <span class="stars">4.5</span>
+                    <a href="#">Go to Yelp page</a>
+                </div>
+            </label>
+        </form>
+        <button class="route" type="submit">Route</button>
+    </main>
+    <script src="js/pub.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

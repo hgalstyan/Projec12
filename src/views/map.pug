@@ -1,0 +1,11 @@
+extends ./layout
+include search
+block content
+		main.login-main-container
+			+search
+			#map
+			each location in locations
+				input(type="hidden", value= `${location}`, class="location")
+			input(type="hidden", value= `${city}`, class="city")
+		script(src="/js/map.js")
+		script(async='', defer='', src=`https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`)

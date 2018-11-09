@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cafe Searcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header >
+        <div class="navigation-container">
+            <h1 class="heading">Pubs & Booses</h1>
+        </div>
+    </header>
+    <main class="login-main-container">
+        <h4>Hi, Name. Where you want to drink?</h4>
+        <form>
+            <label for="search">Near:</label>
+            <input type="text" class="search" id="search" placeholder="Los Angeles CA" name="search">
+            <button type='submit' onclick="redirect('get','/pubs')" class="btn-search">Search</button>
+        </form>
+        <h3>Your planned trips:</h3>
+        <div class="trip_container">
+            <div class="trip col">
+                    <span class="btn_delete"></span>
+                <a href="#">
+                    <h4>Name of Trip</h4>
+                    <p class="city">City Name</p>
+                    <p class="places">Places: 10</p>
+                    <p class="date">Planned Date: 7/14/18</p>
+                </a>
+            </div>
+            <div class="trip col">
+                <a href="#">
+                    <h4>Name of Trip</h4>
+                    <p class="city">City Name</p>
+                    <p class="places">Places: 10</p>
+                    <p class="date">Planned Date: 7/14/18</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
